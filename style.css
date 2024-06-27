@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px;
+}
+
+.section-container{
+    width: 100%;
+    padding: 10px;
+}
+
+.section{
+    background-color: #ebeaea;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title-1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dba6a5;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 1.25em;
+}
+.section-title-2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #da5755;
+    color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 1.25em;
+}
+.section-title-3{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f6dd6e;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 1.25em;
+}
+
+@media (min-width: 992px) {
+    .section {
+        float: left;
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 45%;
+    }
+    .section:nth-child(odd) {
+        margin-right: 5%;
+    }
+    .section:nth-child(even) {
+        margin-left: 5%;
+    }
+    .section:nth-child(3) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
